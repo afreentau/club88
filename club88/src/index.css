@@ -1,0 +1,550 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Herr+Von+Muellerhoff|Source+Sans+Pro:400,900&display=swap');
+@font-face {
+    font-family: EBGaramond-Italic-VariableFont_wght;
+    src: url(./fonts/EBGaramond-Italic-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header {
+    width: 100%;
+    background-color: black;
+    height: auto;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%); */
+    background: rgb(199, 160, 61);
+}
+
+.navContainer {
+    display: block;
+    position: relative;
+    height: 100px;
+    background-color: black;
+}
+
+.navContainer h1 {
+    position: absolute;
+    padding: 3px;
+    float: left;
+    margin-left: 2%;
+    margin-top: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+}
+
+.navContainer ul {
+    width: auto;
+    float: right;
+    margin-top: 8px;
+}
+
+.navContainer li {
+    display: inline-block;
+    padding: 15px 30px;
+}
+
+.navContainer a {
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.navContainer a:hover {
+    color: grey;
+    transition: 0.2s;
+    border: 2px solid;
+    border-radius: 20px;
+    padding: 7px;
+    text-decoration: none;
+}
+
+/*----------------------------Nav css ends here --------------------------------*/
+
+.hero-container {
+    padding: 3rem 0 8rem;
+    margin: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 80% 85%, 0 100%);
+}
+
+.left {
+    padding-right: 100px;
+}
+
+.left img {
+    max-width: 350px;
+}
+
+.right {
+    color: white;
+    align-items: center;
+    max-width: 450px;
+    padding: 3em 0;
+}
+
+.right span {
+    color: rgb(233, 233, 33);
+}
+
+.right h6 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    border-left: 6px solid yellow;
+    border-spacing: 2rem;
+}
+
+.right h1 {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 3.5rem;
+}
+
+/*----------------------------hero css ends here-------------------------*/
+
+section {
+    padding: 3rem 0;
+}
+
+.ceo {
+    background-color: rgb(199, 160, 61);
+}
+
+.container-ceo {
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 2em;
+    border: 5px solid;
+    border-radius: 2px;
+    text-decoration: none;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.ceo-img img {
+    width: auto;
+    max-width: 350px;
+}
+
+.ceo-right {
+    color: white;
+    padding: 10px 15px;
+    align-items: center;
+    max-width: 400px;
+    text-align: center;
+}
+
+.ceo-right h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.ceo-right h3 {
+    font-family: sans-serif;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: bolder;
+}
+
+.ceo-right p {
+    font-family: sans-serif;
+    font-size: 1rem;
+    color: black;
+    font-weight: normal;
+}
+
+/*********************************services css***************************/
+
+.heading {
+    color: rgb(224, 224, 209);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5;
+}
+
+.heading {
+    font-size: 3em;
+}
+
+.heading span {
+    color: black;
+}
+
+.container-service p {
+    color: rgb(68, 66, 66);
+    font-family: sans-serif;
+    margin-bottom: 4rem;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+section.service {
+    background: rgb(199, 160, 61);
+}
+
+section.service .card-wrapper {
+    display: flex;
+    flex-flow: wrap row;
+    justify-content: center;
+    align-items: center;
+}
+
+section.service .card-wrapper .card {
+    position: relative;
+    background: black;
+    padding: 3rem 2rem;
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    padding-top: 2rem;
+    transition: all 0.3s ease;
+}
+
+section.service .card-wrapper .card img {
+    position: absolute;
+    top: -2.5rem;
+    border: 5px solid black;
+    background: rgb(235, 226, 226);
+    width: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+section.service .card-wrapper .card h2 {
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    color: white;
+}
+
+section.service .card-wrapper .card p {
+    color: rgb(151, 144, 144);
+    line-height: 1;
+}
+
+section.service .card-wrapper .card:hover {
+    background: grey;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.4);
+    transform: translateY(-20px);
+}
+
+section.service .card-wrapper .card:hover h2, section.service .card-wrapper .card:hover p {
+    color: black;
+}
+
+/*************************our team *********************************/
+
+section.team {
+    padding: 5rem 3rem;
+    text-align: left;
+    position: relative;
+}
+
+.teamImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+
+.team h1 {
+    font-weight: 400;
+    padding-bottom: 0.5rem;
+    padding-right: 0.5em;
+    font-size: 3rem;
+    border-bottom: 3px solid black;
+    line-height: 3rem;
+    width: 30%;
+    z-index: 10;
+}
+
+.team p {
+    font-weight: 500;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    color: black;
+    z-index: 10;
+}
+
+/**************************our culture***************************/
+
+section.culture {
+    padding-top: 5rem;
+    text-align: left;
+    position: relative;
+}
+
+.cultureImg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    filter: brightness(0.3);
+}
+
+.culture h1 {
+    font-weight: 400;
+    text-align: center;
+    padding-bottom: 1.5rem;
+    font-size: 3rem;
+    color: wheat;
+}
+
+.culture p {
+    font-weight: 500;
+    font-family: sans-serif;
+    padding-bottom: 1.5rem;
+    font-size: 1rem;
+    color: white;
+    text-align: center;
+}
+
+.culture span {
+    color: yellow;
+}
+
+/*************************************************************/
+
+footer {
+    width: 100%;
+    padding: 5rem 0 3rem;
+    background-color: #070707;
+    color: white;
+    text-align: justify;
+    display: block;
+    position: relative;
+}
+
+.back-to-top {
+    width: 7rem;
+    height: 7rem;
+    background-color: #121212;
+    position: absolute;
+    top: -9rem;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+.back-to-top i {
+    display: block;
+    color: white;
+    font-size: 2 rem;
+    padding: 3rem;
+    animation: Up 2s infinite;
+}
+
+.footer-content {
+    overflow: hidden;
+}
+
+/********************footer-content css**********************/
+
+.footer-content {
+    width: 95%;
+    margin: auto;
+    padding: 30px 10px;
+    display: flex;
+    flex-flow: wrap row;
+    box-sizing: border-box;
+    justify-content: space-around;
+}
+
+.footer-items {
+    width: 200px;
+    max-width: 200px;
+    box-sizing: border-box;
+}
+
+.footer-items h1 {
+    padding: 5px 0;
+    font-size: 25px;
+    color: white;
+}
+
+.footer-items p {
+    color: grey;
+    font-size: 16px;
+    text-align: left;
+    line-height: 20px;
+}
+
+.footer-items h2 {
+    margin: 10px 0;
+    color: grey;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.border {
+    height: 3px;
+    width: 50px;
+    background: yellow;
+}
+
+.footer-items ul {
+    list-style: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 0.5px;
+}
+
+.footer-items ul a {
+    text-decoration: none;
+    outline: none;
+    color: grey;
+    transition: 0.2s;
+    font-weight: lighter;
+}
+
+.footer-items ul a:hover {
+    color: yellow;
+}
+
+.footer-items ul li {
+    margin: 10px 0;
+    height: 25px;
+}
+
+.footer-items ul li i {
+    margin-right: 20px;
+}
+
+.social-icon a {
+    text-decoration: none;
+}
+
+.social-icon i {
+    height: 15px;
+    width: 15px;
+    margin: 20px 5px;
+    padding: 10px;
+    color: white;
+}
+
+.social-icon i:hover {
+    color: yellow;
+}
+
+.footer-bottom {
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.errorMessage {
+    display: block;
+    margin: 0 auto 10px;
+    border: 3px solid rgb(199, 46, 46);
+    background-color: rgba(219, 100, 100, 0.39);
+    color: red;
+    padding: 5px 35px;
+    border-radius: 3px;
+    font-size: 1.1em;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (max-width: 560px) {
+    .navContainer {
+        height: auto;
+    }
+    .navContainer h1 {
+        display: block;
+        position: relative;
+        float: none;
+        margin: 0;
+        padding: 10px 10px 0;
+    }
+    .navContainer ul {
+        display: block;
+        float: none;
+        text-align: center;
+    }
+    .navContainer ul li {
+        padding: 15px;
+    }
+    .left {
+        padding: 0;
+    }
+    .right {
+        max-width: 300px;
+    }
+    .right h1 {
+        display: block;
+        line-height: 0.5em;
+        font-size: 50px;
+    }
+    .right h1 span {
+        display: block;
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 470px) {
+    .hero-container .right {
+        padding-bottom: 0;
+    }
+    .container-ceo {
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 10px 0;
+    }
+    .ceo-img img {
+        max-width: 250px;
+    }
+    .ceo-right {
+        width: auto;
+        padding: 5px 12px;
+    }
+    .ceo-right h3, p {
+        text-align: left;
+    }
+}
+
+/*****************************animation**********************/
+
+@keyframes Up {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-1rem);
+    }
+}
+
+.spinner {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
